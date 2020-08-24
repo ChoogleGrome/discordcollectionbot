@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 const fs = require("fs")
-const token = require("./token/token.js")
+const token = require("./token/token.json")
 
 const client = new Discord.Client()
 
@@ -43,4 +43,4 @@ client.once(`ready`, () => {
 
 
 
-client.login(token)
+client.login(token.token)
